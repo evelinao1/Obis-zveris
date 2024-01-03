@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/jpg" href="foto/favicon.jpg">
+    <title>Obis žvėris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="banner">
+        <img src="foto/banner.png" alt="obis banner" width="1000px">  
+    </div>
+    
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="about.html">Mano istorija</a></li>
+            <li><a href="galery.html">Nuotraukų galerija</a></li>
+            <li><a href="video.html">Video galerija</a></li>
+        </ul> 
+        <ul  class="menu">
+            <li><a href="index.html">Obis žvėris</a></li>
+            <li class="hideOnMobile"><a href="about.html">Mano istorija</a></li>
+            <li class="hideOnMobile"><a href="galery.html">Nuotraukų galerija</a></li>
+            <li class="hideOnMobile"><a href="video.html">Video galerija</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul> 
+    </nav>
+ 
+    <div class="wrapper">
+        
+        <div class="container">
+            <div class="image">
+                <img src="foto/bg.jpeg" alt="Obis foto" height="300">
+            </div>
+            <div class="text-index">
+                <h1>Čia esu aš - gražusis Obis!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sunt recusandae nihil alias deserunt in blanditiis dolor earum, eum nisi, 
+                    consectetur sit perferendis a odit. Illo soluta ipsa aut aliquam ex.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>www.obiszveris.com</p>
+        <p>obiszveris@gmail.com</p>
+    </footer>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script> 
+</body>
+
+</html>
